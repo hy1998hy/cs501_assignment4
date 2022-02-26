@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">W4_P5</string>
+    <string name="phase">Phase</string>
+    <string name="selecthint">CHOOSE A LETTER</string>
+    <string name="won">YOU WON</string>
+    <string name="lost">YOU LOST</string>
+    <string name="over">GAME IS OVER</string>
+    <string name="restart">PLAY AGAIN?</string>
+    <string name="wordhint">HINT: </string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cadTxt"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/CAD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gbpTxt" />
+
+    <TextView
+        android:id="@+id/frfTxt"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/JPY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadTxt" />
+
+    <TextView
+        android:id="@+id/CAD"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="CAD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/cadTxt"
+        app:layout_constraintTop_toTopOf="@id/cadTxt" />
+
+    <TextView
+        android:id="@+id/FRF"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="FRF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/frfTxt"
+        app:layout_constraintEnd_toStartOf="@id/frfTxt" />
+
+    <TextView
+        android:id="@+id/jpyTxt"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/JPY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdEditTxt" />
+
+    <TextView
+        android:id="@+id/gbpTxt"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/GBP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jpyTxt" />
+
+    <TextView
+        android:id="@+id/us"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="USD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/usdEditTxt"
+        app:layout_constraintTop_toTopOf="@id/usdEditTxt" />
+
+    <TextView
+        android:id="@+id/JPY"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="JPY"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/jpyTxt"
+        app:layout_constraintEnd_toStartOf="@+id/jpyTxt" />
+
+    <TextView
+        android:id="@+id/GBP"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="GBP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/gbpTxt"
+        app:layout_constraintTop_toTopOf="@id/gbpTxt" />
+
+    <EditText
+        android:id="@+id/usdEditTxt"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="219dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="amount of usd"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/us"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

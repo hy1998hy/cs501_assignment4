@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:contentDescription="@string/phase"
+        android:id="@+id/IMGdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        app:srcCompat="@drawable/phase1"
+        />
+    <LinearLayout
+        android:id="@+id/game_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/game_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="70sp"
+            android:textColor="@color/teal_200" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLHint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/selecthint"
+            android:textColor="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/selecthint"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/container_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_weight="2.4"
+        android:layout_height="0dp" >
+        <GridLayout
+            android:id="@+id/GLLetters"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            >
+
+<!--        <Button android:text="A" />-->
+
+<!--        <Button android:text="B" />-->
+
+<!--        <Button android:text="C" />-->
+
+<!--        <Button android:text="D" />-->
+
+<!--        <Button android:text="E" />-->
+
+<!--        <Button android:text="F" />-->
+
+<!--        <Button android:text="G" />-->
+
+<!--        <Button android:text="H" />-->
+
+<!--        <Button android:text="I" />-->
+
+<!--        <Button android:text="J" />-->
+
+<!--        <Button android:text="K" />-->
+
+<!--        <Button android:text="L" />-->
+
+<!--        <Button android:text="M" />-->
+
+<!--        <Button android:text="N" />-->
+
+<!--        <Button android:text="O" />-->
+
+<!--        <Button android:text="P" />-->
+
+<!--        <Button android:text="Q" />-->
+
+<!--        <Button android:text="R" />-->
+
+<!--        <Button android:text="S" />-->
+
+<!--        <Button android:text="T" />-->
+
+<!--        <Button android:text="U" />-->
+
+<!--        <Button android:text="V" />-->
+
+<!--        <Button android:text="W" />-->
+
+<!--        <Button android:text="X" />-->
+
+<!--        <Button android:text="Y" />-->
+
+<!--        <Button android:text="Z" />-->
+    </GridLayout>
+    </ScrollView>
+</LinearLayout>
